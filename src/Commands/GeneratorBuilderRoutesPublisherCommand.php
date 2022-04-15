@@ -38,7 +38,7 @@ class GeneratorBuilderRoutesPublisherCommand extends Command
 
     private function publishRoutes()
     {
-        $path = config('Hublinkaz.laravel_generator.path.routes', app_path('Http/routes.php'));
+        $path = config('Hublinkaz.laravel_generator.path.routes',  base_path('routes/web.php'));
 
         $routeContents = file_get_contents($path);
 

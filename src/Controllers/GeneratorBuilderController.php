@@ -15,17 +15,17 @@ class GeneratorBuilderController extends Controller
 {
     public function builder()
     {
-        return view(config('Hublinkaz.generator_builder.views.builder'));
+        return view(config('hublinkaz.generator_builder.views.builder'));
     }
 
     public function fieldTemplate()
     {
-        return view(config('Hublinkaz.generator_builder.views.field-template'));
+        return view(config('hublinkaz.generator_builder.views.field-template'));
     }
 
     public function relationFieldTemplate()
     {
-        return view(config('Hublinkaz.generator_builder.views.relation-field-template'));
+        return view(config('hublinkaz.generator_builder.views.relation-field-template'));
     }
 
     public function generate(BuilderGenerateRequest $request)
