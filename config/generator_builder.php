@@ -3,11 +3,10 @@
 return [
 
     'views' => [
+        'builder' => 'hublinkaz.generator-builder.builder',
 
-        'builder' => 'generator-builder::builder',
+        'field-template' => 'hublinkaz.generator-builder.field-template',
 
-        'field-template' => 'generator-builder::field-template',
-
-        'relation-field-template' => 'generator-builder::relation-field-template',
+        'relation-field-template' => 'hublinkaz.generator-builder.relation-field-template',
     ],
 ];
