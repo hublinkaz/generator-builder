@@ -13,7 +13,7 @@ class GeneratorBuilderRoutesPublisherCommand extends Command
      *
      * @var string
      */
-    protected $name = 'Hublinkaz.publish:generator-builder';
+    protected $name = 'hublinkaz.publish:generator-builder';
 
     /**
      * The console command description.
@@ -38,7 +38,7 @@ class GeneratorBuilderRoutesPublisherCommand extends Command
 
     private function publishRoutes()
     {
-        $path = config('Hublinkaz.laravel_generator.path.routes',  base_path('routes/web.php'));
+        $path = config('hublinkaz.laravel_generator.path.routes', app_path('Http/routes.php'));
 
         $routeContents = file_get_contents($path);
 
@@ -55,7 +55,7 @@ class GeneratorBuilderRoutesPublisherCommand extends Command
     public function publishViews()
     {
         $sourceDir = __DIR__.'/../../views/';
-        $destinationDir = base_path('resources/views/Hublinkaz/generator-builder/');
+        $destinationDir = base_path('resources/views/hublinkaz/generator-builder/');
 
         if (file_exists($destinationDir)) {
             $answer = $this->ask('Do you want to overwrite generator-builder? (y|N) :', false);

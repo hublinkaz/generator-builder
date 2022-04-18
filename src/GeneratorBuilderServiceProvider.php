@@ -17,7 +17,7 @@ class GeneratorBuilderServiceProvider extends ServiceProvider
         $configPath = __DIR__.'/../config/generator_builder.php';
 
         $this->publishes([
-            $configPath => config_path('Hublinkaz/generator_builder.php'),
+            $configPath => config_path('hublinkaz/generator_builder.php'),
         ]);
 
         $this->loadViewsFrom(__DIR__.'/../views/', 'generator-builder');
@@ -30,12 +30,12 @@ class GeneratorBuilderServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('Hublinkaz.publish.generator-builder', function ($app) {
+        $this->app->singleton('hublinkaz.publish.generator-builder', function ($app) {
             return new GeneratorBuilderRoutesPublisherCommand();
         });
 
         $this->commands([
-            'Hublinkaz.publish.generator-builder',
+            'hublinkaz.publish.generator-builder',
         ]);
     }
 }

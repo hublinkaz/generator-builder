@@ -70,7 +70,7 @@ class GeneratorBuilderController extends Controller
             $input['--prefix'] = $data['prefix'];
         }
 
-        Artisan::call('Hublinkaz:rollback', $input);
+        Artisan::call('hublinkaz:rollback', $input);
 
         return Response::json(['message' => 'Files rollback successfully'], 200);
     }
@@ -172,7 +172,7 @@ class GeneratorBuilderController extends Controller
 
 //    public function availableSchema()
 //    {
-//        $schemaFolder = config('Hublinkaz.laravel_generator.path.schema_files', base_path('resources/model_schemas/'));
+//        $schemaFolder = config('hublinkaz.laravel_generator.path.schema_files', base_path('resources/model_schemas/'));
 //
 //        if (!File::exists($schemaFolder)) {
 //            return [];
@@ -193,7 +193,7 @@ class GeneratorBuilderController extends Controller
 //
 //    public function retrieveSchema($schema)
 //    {
-//        $schemaFolder = config('Hublinkaz.laravel_generator.path.schema_files', base_path('resources/model_schemas/'));
+//        $schemaFolder = config('hublinkaz.laravel_generator.path.schema_files', base_path('resources/model_schemas/'));
 //
 //        $filePath = $schemaFolder . $schema . ".json";
 //

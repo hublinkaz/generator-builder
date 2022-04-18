@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>InfyOm Technologies</title>
+    <title>Hublinkaz Technologies</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -39,7 +39,7 @@
         <div id="info" style="display: none"></div>
         <div class="box box-primary col-lg-12">
             <div class="box-header" style="margin-top: 10px">
-                <h1 class="box-title" style="font-size: 30px">InfyOm Laravel Generator Builder</h1>
+                <h1 class="box-title" style="font-size: 30px">Hublinkaz Laravel Generator Builder</h1>
             </div>
             <div class="box-body">
                 <form id="form">
